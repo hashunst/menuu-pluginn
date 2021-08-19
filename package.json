@@ -1,0 +1,27 @@
+{
+  "name": "rete-menuu-plugin",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/menuu-plugin.common.js",
+  "module": "build/menuu-plugin.esm.js",
+  "scripts": {
+    "build": "rete --build rete.config.js",
+    "build:dev": "rete --build rete.config.js --watch",
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run lint",
+    "lint": "tsc && eslint src"
+  }, 
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+    "lodash-es": "^4.17.15",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "rete-cli": "0.6.1-rc2",
+    "typescript": "^3.3.3333"
+  }
+}
